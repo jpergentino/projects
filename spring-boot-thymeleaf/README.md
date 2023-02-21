@@ -1,6 +1,6 @@
 # Base project containing the following technologies:
 
-#### Spring Boot 2.7.8 (spring-boot-starter-parent)
+## Spring Boot 2.7.8 (spring-boot-starter-parent)
 
 Created an `IndexController` as an example.
 
@@ -10,7 +10,7 @@ Properties files following the pattern `application-{ENV}.properties`
 
 Logging with `logback-spring.xml` using spring profiles
 
-#### Thymeleaf (spring-boot-starter-thymeleaf)
+## Thymeleaf (spring-boot-starter-thymeleaf)
 
 Created an `index.html` file as an example
 
