@@ -20,4 +20,6 @@ Added jQuery 3.6.3
 
 Added Bootstrap 5.3.0
 
+Added Bootstrap icons 1.10.3
+
 Added PopperJS 2.11.6
