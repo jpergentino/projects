@@ -20,7 +20,7 @@ Using thymeleaf-extras-springsecurity5 dependency to use `sec: tags on Thymeleaf
 
 ## Thymeleaf (spring-boot-starter-thymeleaf)
 
-Created an `index.html` file as an example
+Created `login, index, admin and error` pages as examples
 
 Configured static folder using ResourceHandlers
 
