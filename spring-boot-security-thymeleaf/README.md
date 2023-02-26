@@ -10,6 +10,14 @@ Properties files following the pattern `application-{ENV}.properties`
 
 Logging with `logback-spring.xml` using spring profiles
 
+## Spring Security (spring-boot-starter-security)
+
+Configure an InMemoryUserDetailsManager with user and admin users
+
+Created a Form page with protected index and admin mappings
+
+Using thymeleaf-extras-springsecurity5 dependency to use `sec: tags on Thymeleaf
+
 ## Thymeleaf (spring-boot-starter-thymeleaf)
 
 Created an `index.html` file as an example
