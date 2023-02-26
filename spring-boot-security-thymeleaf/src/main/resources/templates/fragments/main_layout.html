@@ -23,14 +23,19 @@
 
 <body>
 
-<div layout:fragment="content" class="container-fluid pt-2"></div>
+<div layout:fragment="content" class="container pt-2"></div>
 
 <div th:replace="fragments/footer :: footer" class="container-fluid"></div>
 
 
-
-
 <script th:inline="javascript">
+
+/*<![CDATA[*/
+
+	// To use as a variable as the application's root path
+	var baseLink = /*[[@{.}]]*/'';
+
+/*]]>*/
 
 	$(document).ready(function() {
 

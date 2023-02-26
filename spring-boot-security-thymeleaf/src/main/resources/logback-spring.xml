@@ -36,6 +36,7 @@
 			<appender-ref ref="FILE" />
 		</root>
 		<logger name="base" level="TRACE" />
+		<logger name="org.springframework" level="INFO" />
 	</springProfile>
 	
 	<springProfile name="prod">

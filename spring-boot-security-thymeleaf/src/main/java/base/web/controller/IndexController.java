@@ -5,6 +5,7 @@ import javax.annotation.PostConstruct;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.security.access.annotation.Secured;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -30,6 +31,7 @@ public class IndexController {
 	}
 	
 	@GetMapping({ "/", "" })
+	@Secured("USER")
 	public String requestIndex(Model model) {
 		model.addAttribute("message", "Hello!");
 		return "index";

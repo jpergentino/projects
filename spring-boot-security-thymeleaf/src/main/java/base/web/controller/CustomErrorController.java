@@ -41,7 +41,7 @@ public class CustomErrorController implements ErrorController {
     	logger.error("Error {}: {} - {}", errorStatus, errorMessage, errorException);
     	
     	model.addAttribute("errorStatus", errorStatus);
-    	model.addAttribute("errormessage", message);
+    	model.addAttribute("errorMessage", message);
 
         return "error";
     }
