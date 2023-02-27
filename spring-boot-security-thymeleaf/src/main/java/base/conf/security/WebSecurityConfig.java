@@ -49,7 +49,7 @@ public class WebSecurityConfig {
 	        	.loginPage(LOGIN_MAPPING)
 	        	.loginProcessingUrl(LOGIN_PROCESSING_URL)
 	        	.defaultSuccessUrl("/", true)
-//	        	.failureUrl(LOGIN_ERROR_URL)
+//	        	.failureUrl(LOGIN_ERROR_URL) // Alternative to failureHandler
 	        	.failureHandler((request, response, exception) -> {
 	        		logger.error("Error during login {}", exception);
 	        		request.getRequestDispatcher(LOGIN_ERROR_URL).forward(request, response);
@@ -60,10 +60,11 @@ public class WebSecurityConfig {
 	        .logout()
 	        	.logoutUrl("/logout")
 	        	.deleteCookies("JSESSIONID")
+//	        	.logoutSuccessUrl(LOGIN_MAPPING) // Alternative to logoutSuccessHandler
 	        	.logoutSuccessHandler(logoutSuccessHandler())
 	        	.invalidateHttpSession(true)
 	        .and()
-		        .exceptionHandling()
+	        .exceptionHandling()
 		        .accessDeniedHandler(accessDeniedHandler())
 		        .authenticationEntryPoint((request, response, authException) -> {
 		        	logger.error("Access denied: {}", request.getRequestURI());
