@@ -16,7 +16,7 @@ Configure an InMemoryUserDetailsManager with user and admin users
 
 Created a Form page with protected index and admin mappings
 
-Using thymeleaf-extras-springsecurity5 dependency to use `sec: tags on Thymeleaf
+Using thymeleaf-extras-springsecurity5 dependency to use `sec:` tags on Thymeleaf
 
 ## Thymeleaf (spring-boot-starter-thymeleaf)
 
