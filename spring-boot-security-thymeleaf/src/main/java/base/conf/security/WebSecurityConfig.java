@@ -1,4 +1,4 @@
-package base.conf;
+package base.conf.security;
 
 import java.io.IOException;
 
@@ -32,6 +32,7 @@ public class WebSecurityConfig {
 	private static final String LOGIN_ERROR_URL = "/login?loginError=true";
 	private static final String LOGIN_PROCESSING_URL = "/login_user";
 	private static final String LOGIN_MAPPING = "/login";
+	
 	private Logger logger = LoggerFactory.getLogger(WebSecurityConfig.class);
 
 	@Bean
