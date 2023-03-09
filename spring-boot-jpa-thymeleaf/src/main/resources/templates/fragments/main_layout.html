@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html 	xmlns:layout="http://www.w3.org/1999/xhtml" 
+		xmlns:th="http://www.w3.org/1999/xhtml">
+
+<head>
+	<title>Project Title</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<!-- Favicons -->
+	<link th:href="@{/static/favicon.ico}" rel="icon"/>
+	
+	<script type="text/javascript" th:src="@{/static/vendor/jquery/jquery-3.6.3.min.js}"></script>
+	<script type="text/javascript" th:src="@{/static/vendor/bootstrap-5.3.0/js/bootstrap.bundle.min.js}"></script>
+	<script type="text/javascript" th:src="@{/static/js/app.js}"></script>
+	
+	<!-- Bootstrap core CSS -->
+	<link th:href="@{/static/vendor/bootstrap-5.3.0/css/bootstrap.min.css}" rel="stylesheet" />
+	<link th:href="@{/static/vendor/bootstrap-icons-1.10.3/bootstrap-icons.css}" rel="stylesheet" />
+	<link th:href="@{/static/css/app.css}" rel="stylesheet" />
+	
+</head>
+
+<body>
+
+<div layout:fragment="content" class="container pt-2"></div>
+
+<div th:replace="fragments/footer :: footer" class="container-fluid"></div>
+
+
+<script th:inline="javascript">
+
+/*<![CDATA[*/
+
+	// To use as a variable as the application's root path
+	var baseLink = /*[[@{.}]]*/'';
+
+/*]]>*/
+
+	$(document).ready(function() {
+
+		$('[data-toggle="tooltip"]').tooltip();
+		$('[data-bs-toggle="tooltip"]').tooltip();
+
+		$(".rotate").click(function() {
+			$(this).toggleClass("down");
+			console.log("Teste");
+		});
+		
+	});
+</script>
+
+</body>
+
+</html>
