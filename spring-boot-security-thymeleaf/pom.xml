@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>base</groupId>
-	<artifactId>spring-boot-thymeleaf-simple</artifactId>
+	<artifactId>spring-boot-security-thymeleaf</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>Project's Name</name>
 	<description>Project's Description</description>
