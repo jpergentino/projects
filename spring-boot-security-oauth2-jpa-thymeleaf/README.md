@@ -26,6 +26,10 @@ Created a Form page with protected index and admin mappings
 
 Using thymeleaf-extras-springsecurity5 dependency to use `sec:` tags on Thymeleaf
 
+## Spring OAuth2 Security (spring-boot-starter-oauth2-client)
+
+Configuration 
+
 ## Thymeleaf (spring-boot-starter-thymeleaf)
 
 Created `login, index, admin and error` pages as examples

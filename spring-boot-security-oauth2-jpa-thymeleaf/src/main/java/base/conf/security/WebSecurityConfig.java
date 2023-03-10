@@ -96,7 +96,7 @@ public class WebSecurityConfig {
 						
 						CustomOAuth2User oauthUser = (CustomOAuth2User) authentication.getPrincipal();
 						
-						// Register the new login userService.processOAuthPostLogin(oauthUser.getEmail());
+						logger.info("Authenticated user {}.", oauthUser.getName());
 						
 						response.sendRedirect("/");
 
