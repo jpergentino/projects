@@ -99,7 +99,6 @@ public class WebSecurityConfig {
 						logger.info("Authenticated user {}.", oauthUser.getName());
 						
 						response.sendRedirect("/");
-
 						
 					}
 				});

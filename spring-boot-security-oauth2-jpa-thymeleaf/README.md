@@ -43,3 +43,7 @@ Added Bootstrap 5.3.0
 Added Bootstrap icons 1.10.3
 
 Added PopperJS 2.11.6
+
+# Required steps
+
+Configure OpenID OAuth client-id on https://console.cloud.google.com/apis/credentials
