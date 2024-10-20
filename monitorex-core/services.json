@@ -1,9 +1,18 @@
-[
-	{
-		"name": "GoogleX",
-		"url" : "http://www.google.com",
-		"port": 80,
-		"interval": 60 
-	}
-
-]
+{
+	"name" : "Main services",
+	"services" : [
+		{
+			"name": "Google",
+			"url" : "http://www.google.com",
+			"port": 80,
+			"interval": 60 
+		},
+		{
+			"name": "ERK",
+			"url" : "https://erk.rkp.adv.br",
+			"port": 80,
+			"interval": 60
+		}
+	]
+	
+}

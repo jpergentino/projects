@@ -18,8 +18,7 @@ public class MonitorCoreApplication {
 
 	public static void main(String[] args) throws IOException, URISyntaxException {
 
-		logger.info("Starting application");
-		
+		logger.info("Starting application...");
 
 		// Checking if there is argument
 		if (args != null && args.length != 0) {
