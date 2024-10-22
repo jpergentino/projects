@@ -5,13 +5,21 @@
 			"name": "Google",
 			"url" : "http://www.google.com",
 			"port": 80,
-			"interval": 60 
+			"method" : "GET",
+			"requestBody" : null,
+			"expectedResultCode" : 200,
+			"timeout" : 2,
+			"interval": 10
 		},
 		{
 			"name": "ERK",
 			"url" : "https://erk.rkp.adv.br",
-			"port": 80,
-			"interval": 60
+			"port": 8080,
+			"method" : "get",
+			"requestBody" : null,
+			"expectedResultCode" : 200,
+			"timeout" : -1,
+			"interval": 10
 		}
 	]
 	

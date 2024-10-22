@@ -14,7 +14,7 @@ import org.mockito.junit.jupiter.MockitoExtension;
 import me.monitorex.MonitorCoreApplication;
 
 @ExtendWith(MockitoExtension.class)
-class MainApplicationTests {
+class MainApplicationTest {
 	
 	@Mock
 	private File file;

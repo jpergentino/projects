@@ -8,6 +8,8 @@ import java.io.IOException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 /**
@@ -23,13 +25,15 @@ public class JSONUtil {
 	 * @param jsonFile the JSON file.
 	 * 
 	 * @return true if it is a valid JSON file, false otherwise.
+	 * @throws IOException if an IO error occur. 
 	 */
-	public static boolean validateJSONFromFile(File jsonFile) {
+	public static boolean validateJSONFromFile(File jsonFile) throws IOException {
 		
-		try { 
+		try {
 			new ObjectMapper().readTree(readJsonFile(jsonFile));
-		} catch(IOException e){
-			logger.warn("Not a valid JSON: {}", e.getMessage());
+		} catch (JsonMappingException e) {
+			return false;
+		} catch (JsonProcessingException e) {
 			return false;
 		}
 		
